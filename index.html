@@ -8,9 +8,7 @@
     <meta name="description" content="Welcome to BeeJoy">
     <meta name="keywords" content="snack shop, snacks, high-quality ingredients, affordable prices, customer service">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-MFgo2jSnvT7f7j7+6R6pYhLljvzNtC+Vp2jlfEBPAsWckus9A1s5a1VbZ6kStgY5ZV3kX6MxOj9KDGccsHax6w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -19,7 +17,7 @@
     <!-- Header -->
     <header class="navbar navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" alt="Snack Shop Logo" width="160" height="100">
+            <img src="./img/logo.png" alt="Snack Shop Logo" width="110" height="70">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -208,6 +206,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="tab-pane fade" id="tab4" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product4.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 1</h5>
+                                        <p class="card-text">$10</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 1')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product5.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 2</h5>
+                                        <p class="card-text">$15</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 2')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product6.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 3</h5>
+                                        <p class="card-text">$20</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 3')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -280,14 +315,14 @@
         </div>
 
         <span class="back-to-top" onclick="scrollToTop()">
-            <i class="fas fa-arrow-up"></i>
+            <i class="fa-regular fa-circle-up"></i>
         </span>
     </container>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center txt-foot">
-            <p>&copy; 2023 Dried Fruit Shop. All rights reserved.</p>
+            <p>&copy; 2024 BeeJoy. All rights reserved.</p>
         </div>
     </footer>
 

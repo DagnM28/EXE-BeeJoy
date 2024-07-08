@@ -27,10 +27,12 @@ html {
   font-weight: bold;
   font-size: 1.25rem;
   margin: 1vw;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #DAA520; /* Golden color */
+  color: #DAA520;
+  transform: scale(1.1);
 }
 
 .nav-tabs .nav-link{
@@ -42,6 +44,11 @@ html {
 .nav-tabs .nav-link:hover {
   background-color: #e9740d;
   color: white;
+  
+}
+
+.tab-content {
+  margin-top: 2rem;
 }
 
 .btn-primary, .btn-info, .btn-secondary {
@@ -59,6 +66,8 @@ html {
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
+  border: solid 2px #FF8C00;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-body {
@@ -223,7 +232,7 @@ a.text-white:hover {
 }
 
 .back-to-top i {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .back-to-top:hover {
