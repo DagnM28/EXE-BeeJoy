@@ -1,0 +1,348 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #ead296;
+}
+
+.navbar-brand {
+  margin-left: 2vw;
+}
+
+.navbar-toggler {
+  border: solid 2px black
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* Orange color */
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 1vw;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #DAA520; /* Golden color */
+}
+
+.nav-tabs .nav-link{
+  background-color: #f8b12e;
+  color: white;
+  border: solid 1px #e9740d;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #e9740d;
+  color: white;
+}
+
+.btn-primary, .btn-info, .btn-secondary {
+  background-color: #FF8C00;
+  border-color: #FF8C00;
+}
+
+.btn-primary:hover, .btn-info:hover, .btn-secondary:hover {
+  background-color: #e9740d;
+  border-color: #e9740d;
+}
+
+.product-card {
+  perspective: 1000px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-body .card-title {
+  color: #FF8C00;
+}
+
+.card-body .card-text {
+  color: #333;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+.product-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Additional improvements */
+
+.header, .footer {
+  background-color: #f8f9fa;
+}
+
+.title-logo img {
+  padding-right: 2vw;
+}
+
+.text-center {
+  color: #333;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+  color: #fff;
+}
+
+a.text-white:hover {
+  color: #DAA520;
+}
+
+.tab-pane .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-pane .col-md-4 {
+  display: flex;
+  flex: 1 1 33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.content-row-1 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-row-2 {
+  padding-left: 10vw;
+}
+
+.content-row-2 h2 {
+  height: 35%;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.list-unstyled {
+  margin-top: 1rem;
+}
+
+.row .col-md-4 {
+  justify-content: center;
+}
+
+.product-txt {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img-about {
+  padding-left: 5vw;
+}
+
+.intro {
+  margin-top: 5rem;
+  width: 100%;
+  height: 30rem;
+  padding-top: 5rem;
+  padding-left: 10rem;
+  text-align: left;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner {
+  height: 8rem;
+  width: 100%;
+}
+
+.up {
+  margin-top: 10vh;
+}
+
+.down {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #ff9b28;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top i {
+    font-size: 20px;
+}
+
+.back-to-top:hover {
+    background-color: #cb6710;
+    transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+    .back-to-top {
+        right: 10px;
+        bottom: 10px;
+        padding: 10px;
+    }
+}
+
+.txt-foot {
+  color: white;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 3px solid #ef3f04;
+}
+
+.popup h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.popup-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.popup-buttons button {
+  margin-right: 10px;
+}
+
+.img-cam {
+  height: 8rem;
+  width: 100%;
+}
+
+.FAQ-txt {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease-in-out;
+}
+
+.carousel-item .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    border: 3px solid #ef3f04;
+}
+
+.carousel-item .card-body {
+    padding: 30px;
+    background-color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #555;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-control-next {
+    right: -5%;
+}
+

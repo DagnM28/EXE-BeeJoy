@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Shop</title>
+    <meta name="description" content="Welcome to Dried Fruit Shop">
+    <meta name="keywords" content="snack shop, snacks, high-quality ingredients, affordable prices, customer service">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-MFgo2jSnvT7f7j7+6R6pYhLljvzNtC+Vp2jlfEBPAsWckus9A1s5a1VbZ6kStgY5ZV3kX6MxOj9KDGccsHax6w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Snack Shop Logo" width="160" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com">Purchase</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <container class="content-container">
+        <!-- Home Section -->
+        <section id="home" class="text-center col-md-6">
+            <div class="container intro">
+                <h1 class="intro-title">Welcome to BeeJoy</h1>
+                <p class="intro-content">Your favorite place for delicious snacks</p>
+                <button class="btn btn-primary" onclick="location.href='#products'">Buy</button>
+                <button class="btn btn-info" onclick="location.href='#about'">Details</button>
+            </div>
+        </section>
+
+        <img class="banner" src="./img//orange-banner.jpg" />
+
+        <!-- About Us Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row mb-4 up">
+                    <div class="col-md-4 img-about">
+                        <img src="./img/product2.jpg" class="img-fluid" alt="Product Image">
+                    </div>
+                    <div class="col-md-8 content-row-1">
+                        <h2>About Us</h2>
+                        <p>We offer the best snacks in town. Our products are made from high-quality ingredients...</p>
+                    </div>
+                </div>
+                <div class="row down">
+                    <div class="col-md-8 content-row-2">
+                        <h2>Why Choose Us</h2>
+                        <ul class="list-unstyled">
+                            <li>✔ High-quality ingredients</li>
+                            <li>✔ Variety of products</li>
+                            <li>✔ Affordable prices</li>
+                            <li>✔ Excellent customer service</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/product3.jpg" class="img-fluid" alt="Product Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-5 bg-light">
+            <div class="container product">
+                <h2 class="text-center mb-4 product-txt">Our Products</h2>
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab">Combo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab">Dried
+                            Fruit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab">Tea</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab">Snack</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product4.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 1</h5>
+                                        <p class="card-text">$10</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 1')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product5.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 2</h5>
+                                        <p class="card-text">$15</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 2')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product6.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 3</h5>
+                                        <p class="card-text">$20</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 3')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product7.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 4</h5>
+                                        <p class="card-text">$25</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 4')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product8.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 5</h5>
+                                        <p class="card-text">$30</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 5')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product9.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 6</h5>
+                                        <p class="card-text">$35</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 6')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product10.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 7</h5>
+                                        <p class="card-text">$40</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 7')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product11.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 8</h5>
+                                        <p class="card-text">$45</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 8')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card product-card">
+                                    <img src="./img/product12.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product 9</h5>
+                                        <p class="card-text">$50</p>
+                                        <button class="btn btn-secondary"
+                                            onclick="showPopup('Product 9')">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <img class="img-cam" src="./img/orange.png" />
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4 FAQ-txt">Frequently Asked Questions</h2>
+                <div id="faqCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">What is your return policy?</h5>
+                                    <p class="card-text">Our return policy lasts 30 days. If 30 days have gone by since
+                                        your
+                                        purchase,
+                                        unfortunately,
+                                        we can’t offer you a refund or exchange.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">How do I track my order?</h5>
+                                    <p class="card-text">You can track your order using the tracking number provided in
+                                        your
+                                        order confirmation
+                                        email.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Do you offer international shipping?</h5>
+                                    <p class="card-text">Yes, we offer international shipping. Shipping costs will apply
+                                        and
+                                        will be added at
+                                        checkout.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#faqCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#faqCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2 id="popup-title">Order Confirmation</h2>
+                <p id="popup-message">Do you want to order this product?</p>
+                <div class="popup-buttons">
+                    <button class="btn btn-primary" onclick="placeOrder()">Order</button>
+                    <button class="btn btn-secondary" onclick="closePopup()">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <span class="back-to-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </span>
+    </container>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center txt-foot">
+            <p>&copy; 2023 Dried Fruit Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
