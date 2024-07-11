@@ -41,7 +41,6 @@ function showPopup(productName) {
 
     popup.style.display = 'block';
 
-    // Thêm sự kiện lắng nghe để đóng popup khi nhấp ra ngoài
     document.addEventListener('mousedown', function (event) {
         if (!popup.contains(event.target)) {
             closePopup();
@@ -51,17 +50,14 @@ function showPopup(productName) {
     document.body.style.overflow = 'hidden';
 }
 
-// Function to place order (redirect to Facebook)
 function placeOrder() {
     window.location.href = 'https://www.facebook.com';
 }
 
-// Function to close the popup
 function closePopup() {
     var popup = document.getElementById('popup');
     popup.style.display = 'none';
 
-    // Xóa sự kiện lắng nghe khi đóng popup
     document.removeEventListener('mousedown', closePopup);
     document.body.style.overflow = '';
 }
