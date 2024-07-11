@@ -1,21 +1,45 @@
+@font-face {
+  font-family: CustomePoppins;
+  font-family: CustomBrush;
+  src: url('../fonts/Poppins-Medium.ttf'), format(tff);
+  src: url('../fonts/Poppins-SemiBold.ttf'), format(tff);
+  src: url('../fonts/BRUSHSCI.TTF'), format(tff);
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: CustomPoppins;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-family: CustomPoppins;
 }
 
 .navbar {
   background-color: #ead296;
 }
 
+.navbar-brand span {
+  margin-left: 1rem;
+}
+
 .navbar-brand {
   margin-left: 2vw;
+  font-family: CustomBrush;
+  font-size: 3rem;
+  color: black;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  background: linear-gradient(to right, #ed0000 20%, #da5710 30%, #e9ab0e 70%, #fbff14 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-toggler {
-  border: solid 2px black
+  border: solid 2px rgb(253, 106, 20)
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -23,16 +47,26 @@ html {
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff; /* Orange color */
+  display: flex;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.25rem;
   margin: 1vw;
   transition: background-color 0.3s, transform 0.3s;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  border-style: solid;
+  border-image: linear-gradient(
+      to left,
+      rgba(255, 134, 28, 0.938), 
+      rgba(0, 0, 0, 0)
+    ) 0 0 100%;;
 }
 
 .navbar-nav .nav-link:hover {
   color: #DAA520;
-  transform: scale(1.1);
 }
 
 .nav-tabs .nav-link{
@@ -57,8 +91,6 @@ html {
 }
 
 .btn-primary, .btn-info {
-  width: 8%;
-  height: 10%;
   margin-right: 1rem;
   font-size: 1.1rem;
 }
@@ -77,6 +109,10 @@ html {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.product-card img {
+  border-bottom: solid 2px #FF8C00;
+}
+
 .card-body {
   backface-visibility: hidden;
   display: flex;
@@ -92,10 +128,14 @@ html {
   color: #333;
 }
 
-.product-card img {
-  max-width: 100%;
+.product-img {
+  max-width: 10rêm;
   height: auto;
   flex: 1;
+}
+
+.product-img img {
+  width: 100%;
 }
 
 .product-card .card-body {
@@ -145,7 +185,7 @@ a.text-white:hover {
 .content-row-1 h2 {
   font-size: 3rem;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'CustomPoppins', sans-serif;
   background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -160,7 +200,7 @@ a.text-white:hover {
   height: 35%;
   font-size: 3rem;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'CustomPoppins', sans-serif;
   background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -178,7 +218,7 @@ a.text-white:hover {
 .product-txt {
   font-size: 3rem;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'CustomPoppins', sans-serif;
   background: linear-gradient(to right, #ef3f04 20%, #ec502c 30%, #ecd92a 70%, #96d405 80%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -208,12 +248,13 @@ a.text-white:hover {
 .intro h1 {
   font-size: 4rem;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'CustomPoppins', sans-serif;
   background: linear-gradient(to right, #ed0000 20%, #da5710 30%, #e9ab0e 70%, #fbff14 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 7rem;
+  padding-bottom: 1rem;
 }
 
 .banner {
@@ -294,7 +335,7 @@ a.text-white:hover {
 .popup h2 {
   font-size: 2rem;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'CustomPoppins', sans-serif;
   background: linear-gradient(to right, #ed0000 20%, #da5710 30%, #e9ab0e 70%, #fbff14 80%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -318,7 +359,7 @@ a.text-white:hover {
 .FAQ-txt {
   font-size: 3rem;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'CustomePoppins', sans-serif;
   background: linear-gradient(to right, #ed0000 20%, #da5710 30%, #e9ab0e 70%, #fbff14 80%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -367,3 +408,25 @@ a.text-white:hover {
     right: -5%;
 }
 
+@media (min-width: 991px) {
+  .nav-item {
+    border: none;
+  }
+}
+
+.product-ill {
+  max-height: 20rem;
+  max-width: 20rem;
+  background-size: cover;
+  background-position: right;
+}
+
+.product-ill img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-buy {
+  background-color: #da5710;
+  border-radius: 2rem;
+}

@@ -18,18 +18,18 @@
     <!-- Header -->
     <header class="navbar navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" alt="Snack Shop Logo" width="110" height="70">
+            <img src="./img/logo.png" alt="Snack Shop Logo" width="110" height="100"><span>BeeJoy</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+            <span class="fa fa-solid fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Trang Chủ</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">Về Chúng Tôi</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#products">Sản Phẩm</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#faq">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com">Purchase</a></li>
+                <li class="nav-item btn-buy"><a class="nav-link" href="https://www.facebook.com">Đặt Hàng Ngay</a></li>
             </ul>
         </div>
     </header>
@@ -38,10 +38,10 @@
         <!-- Home Section -->
         <section id="home" class="text-center col-md">
             <div class="container intro">
-                <h1 class="intro-title">Welcome to BeeJoy</h1>
+                <h1 class="intro-title">Chào mừng đến với BeeJoy</h1>
                 <p class="intro-content">Your favorite place for delicious snacks</p>
-                <button class="btn btn-primary" onclick="location.href='#products'">Buy</button>
-                <button class="btn btn-info" onclick="location.href='#about'">Details</button>
+                <button class="btn btn-primary" onclick="location.href='#products'">Mua hàng</button>
+                <button class="btn btn-info" onclick="location.href='#about'">Chi tiết</button>
             </div>
         </section>
 
@@ -51,17 +51,17 @@
         <section id="about" class="py-5">
             <div class="container">
                 <div class="row mb-4 up">
-                    <div class="col-md-4 img-about">
-                        <img src="./img/product2.jpg" class="img-fluid" alt="Product Image">
+                    <div class="col-md-4 img-about package-ill">
+                        <img src="./img/package.jpg" class="img-fluid" alt="Product Image">
                     </div>
                     <div class="col-md-8 content-row-1">
-                        <h2>About Us</h2>
+                        <h2>Về Chúng Tôi</h2>
                         <p>We offer the best snacks in town. Our products are made from high-quality ingredients...</p>
                     </div>
                 </div>
                 <div class="row down">
                     <div class="col-md-8 content-row-2">
-                        <h2>Why Choose Us</h2>
+                        <h2>Tại sao bạn có thể tin tưởng sản phẩm của chúng tôi</h2>
                         <ul class="list-unstyled">
                             <li>✔ High-quality ingredients</li>
                             <li>✔ Variety of products</li>
@@ -69,8 +69,8 @@
                             <li>✔ Excellent customer service</li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
-                        <img src="./img/product3.jpg" class="img-fluid" alt="Product Image">
+                    <div class="col-md-4 product-ill">
+                        <img src="./img/illu.jpg" class="img-fluid" alt="Product Image">
                     </div>
                 </div>
             </div>
@@ -79,17 +79,16 @@
         <!-- Products Section -->
         <section id="products" class="py-5 bg-light">
             <div class="container product">
-                <h2 class="text-center mb-4 product-txt">Our Products</h2>
+                <h2 class="text-center mb-4 product-txt">Sản Phẩm</h2>
                 <ul class="nav nav-tabs" id="productTabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab">Combo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab">Dried
-                            Fruit</a>
+                        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab">Trái Cây Sấy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab">Tea</a>
+                        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab">Trà</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab">Snack</a>
@@ -100,10 +99,12 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card product-card">
-                                    <img src="./img/product4.jpg" class="card-img-top" alt="Product Image">
+                                    <div class="product-img">
+                                        <img src="./img/product1.jpg" class="card-img-top" alt="Product Image">
+                                    </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Product 1</h5>
-                                        <p class="card-text">$10</p>
+                                        <h5 class="card-title">Combo 10, 20, 30 Cam xả lá dứa</h5>
+                                        <p class="card-text">Coming Soon...</p>
                                         <button class="btn btn-secondary"
                                             onclick="showPopup('Product 1')">Order</button>
                                     </div>
@@ -111,7 +112,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="card product-card">
-                                    <img src="./img/product5.jpg" class="card-img-top" alt="Product Image">
+                                    <img src="./img/product2.jpg" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
                                         <h5 class="card-title">Product 2</h5>
                                         <p class="card-text">$15</p>
@@ -122,7 +123,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="card product-card">
-                                    <img src="./img/product6.jpg" class="card-img-top" alt="Product Image">
+                                    <img src="./img/product3.jpg" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
                                         <h5 class="card-title">Product 3</h5>
                                         <p class="card-text">$20</p>
@@ -137,10 +138,10 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card product-card">
-                                    <img src="./img/product7.jpg" class="card-img-top" alt="Product Image">
+                                    <img src="./img/product4.jpg" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
-                                        <h5 class="card-title">Product 4</h5>
-                                        <p class="card-text">$25</p>
+                                        <h5 class="card-title">Cam sấy mật ong</h5>
+                                        <p class="card-text">Coming Soon...</p>
                                         <button class="btn btn-secondary"
                                             onclick="showPopup('Product 4')">Order</button>
                                     </div>
@@ -148,10 +149,10 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="card product-card">
-                                    <img src="./img/product8.jpg" class="card-img-top" alt="Product Image">
+                                    <img src="./img/product5.jpg" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
-                                        <h5 class="card-title">Product 5</h5>
-                                        <p class="card-text">$30</p>
+                                        <h5 class="card-title">Cam sấy xả lá dứa</h5>
+                                        <p class="card-text">Coming Soon...</p>
                                         <button class="btn btn-secondary"
                                             onclick="showPopup('Product 5')">Order</button>
                                     </div>
@@ -162,7 +163,7 @@
                                     <img src="./img/product9.jpg" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
                                         <h5 class="card-title">Product 6</h5>
-                                        <p class="card-text">$35</p>
+                                        <p class="card-text">Coming Soon...</p>
                                         <button class="btn btn-secondary"
                                             onclick="showPopup('Product 6')">Order</button>
                                     </div>
@@ -174,10 +175,10 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card product-card">
-                                    <img src="./img/product10.jpg" class="card-img-top" alt="Product Image">
+                                    <img src="./img/product7.jpg" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
-                                        <h5 class="card-title">Product 7</h5>
-                                        <p class="card-text">$40</p>
+                                        <h5 class="card-title">Trà...</h5>
+                                        <p class="card-text">Coming Soon...</p>
                                         <button class="btn btn-secondary"
                                             onclick="showPopup('Product 7')">Order</button>
                                     </div>
@@ -185,10 +186,10 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="card product-card">
-                                    <img src="./img/product11.jpg" class="card-img-top" alt="Product Image">
+                                    <img src="./img/product8.jpg" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
-                                        <h5 class="card-title">Product 8</h5>
-                                        <p class="card-text">$45</p>
+                                        <h5 class="card-title">Trà...</h5>
+                                        <p class="card-text">Coming Soon...</p>
                                         <button class="btn btn-secondary"
                                             onclick="showPopup('Product 8')">Order</button>
                                     </div>
